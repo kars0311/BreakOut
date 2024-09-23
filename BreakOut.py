@@ -1,5 +1,3 @@
-from random import random
-
 import pygame as p
 import random as rnd
 
