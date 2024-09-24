@@ -31,12 +31,12 @@ class Ball(p.Rect):
 
     def __init__(self, x, y, diameter):
         super().__init__(x, y, diameter, diameter)
-        self.vx = rnd.randint(0,4) * rnd.choice([1,-1])
+        self.vx = rnd.randint(0,5) * rnd.choice([1,-1])
         self.vy = rnd.randint(3,5)
 
     def draw(self):
-        p.draw.ellipse(screen, 'black', self, 0)
-        p.draw.ellipse(screen, 'grey', self, 1)
+        p.draw.rect(screen, 'black', self, 0)
+        p.draw.rect(screen, 'grey', self, 1)
 
     def update(self):
         self.x+=self.vx
